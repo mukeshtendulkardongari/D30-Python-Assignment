@@ -23,6 +23,11 @@ else:
     else:
         print("Invalid signal color input... ")
 
+#OUTPUT:
+# Enter signal color (red/yellow/green):red
+# Are there any emergency vehicles approaching ?(true/false) true
+# override the signal for emergency vehicles
+
 # 2. Loan Eligibility Checker
 # A bank provides a loan based on the following conditions:
 # Age must be between 21 and 60
@@ -48,6 +53,11 @@ if (21<=age<=60) :
 else:
     print("Not Eligible")
 
+#OUTPUT:
+# Enter age:21
+# Enter Monthly Salary:25000
+# Enter Credit Score:698
+# Partially eligible
 
 # 3. Triangle Type Identifier
 # Given three integer values representing the sides of a triangle, determine:
@@ -72,6 +82,11 @@ elif side1+side2>side3 and side1+side3>side2 and side2+side3>side1:
 else:
     print("Triangle is not possible")
 
+#OUTPUT:
+# Enter side 1:20
+# Enter side 2:21
+# Enter side 3:3
+# Scalene Triangle
 
 # 4. Electricity Bill Slab Logic
 # Electricity charges depend on units consumed:
@@ -90,6 +105,10 @@ elif (units>300):
 else:
     print("Invalid input...")
 
+# OUTPUT:
+# Enter Consumed units:130
+# TOTAL BILL:650 Rupees
+
 # 5. Exam Result Analyzer
 # A student has marks in three subjects.
 # Rules:
@@ -107,7 +126,9 @@ sub3=int(input("Enter Subject3 marks:"))
 tot=sub1+sub2+sub3
 avg=tot/3
 
-if (sub1>35 and sub2>35  and sub3>35):
+if (sub1<35 or sub2<35  or sub3<35):
+    print("Fail")
+else:
     if (avg>=75):
         print("Distinction")
     elif (avg>=60):
@@ -116,6 +137,10 @@ if (sub1>35 and sub2>35  and sub3>35):
         print("Second Class")
     else:
         print("Pass")
-else:
-    print("Fail")
+
+# OUTPUT:
+# Enter Subject1 marks:35
+# Enter Subject2 marks:56
+# Enter Subject3 marks:65
+# Second Class
 
